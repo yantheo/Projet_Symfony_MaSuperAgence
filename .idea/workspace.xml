@@ -20,15 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e5f747b-644c-462d-a648-70ceb723a8a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201019191158.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Option.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/OptionType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/OptionRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/option/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/option/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/option/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/option/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/PropertySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PropertySearchType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/property/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,11 +181,20 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin/option" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\src\Controller\Admin" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -186,7 +210,9 @@
       <workItem from="1602761543236" duration="1737000" />
       <workItem from="1602763332108" duration="19718000" />
       <workItem from="1602842130361" duration="2432000" />
-      <workItem from="1602922152229" duration="49758000" />
+      <workItem from="1602922152229" duration="56781000" />
+      <workItem from="1603131787936" duration="117000" />
+      <workItem from="1603131935685" duration="8770000" />
     </task>
     <servers />
   </component>
@@ -224,22 +250,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602771329309" />
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603111004033">
+    <state x="450" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603128729771">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="450" y="166" key="#com.intellij.fileTypes.FileTypeChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603128729771" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603199765168">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603199765168" />
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603111004033" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602921973893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602921973893" />
+    <state x="248" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603127470354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="248" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603127470354" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603115972240">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603115972240" />
-    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1602789618077">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1603131861594">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="105" key="FileChooserDialogImpl/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602789618077" />
+    <state x="463" y="105" key="FileChooserDialogImpl/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603131861594" />
     <state x="545" y="262" key="Github.ShareDialog" timestamp="1602789780819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -264,10 +299,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602778863916" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603108663893">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603121135066">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603108663893" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603121135066" />
     <state x="0" y="0" width="585" height="728" key="find.popup" timestamp="1602926386146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

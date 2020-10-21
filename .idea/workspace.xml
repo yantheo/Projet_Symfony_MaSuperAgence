@@ -20,30 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e5f747b-644c-462d-a648-70ceb723a8a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201019191158.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminOptionController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Option.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/OptionType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/OptionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/option/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes/liip_imagine.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201021101548.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201021103049.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/properties/5f906e3a2caf1563113953.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/properties/empty.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminPropertyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/PropertySearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/PropertySearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertySearchType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertySearchType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/PropertyRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +162,11 @@
       <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
     </include_path>
   </component>
   <component name="ProjectId" id="1isxhZVZuU2hCtRe7QGAsAGEtig" />
@@ -181,6 +182,7 @@
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin/option" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -188,12 +190,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\public\images\properties" />
       <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
       <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\src\Controller\Admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -212,7 +215,7 @@
       <workItem from="1602842130361" duration="2432000" />
       <workItem from="1602922152229" duration="56781000" />
       <workItem from="1603131787936" duration="117000" />
-      <workItem from="1603131935685" duration="8770000" />
+      <workItem from="1603131935685" duration="45472000" />
     </task>
     <servers />
   </component>
@@ -254,11 +257,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="450" y="166" key="#com.intellij.fileTypes.FileTypeChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603128729771" />
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603199765168">
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603275263820">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603199765168" />
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603111004033" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603207730976" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603275263820" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602921973893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -299,21 +302,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602778863916" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603121135066">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603202626342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603202626342" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603121135066" />
-    <state x="0" y="0" width="585" height="728" key="find.popup" timestamp="1602926386146">
+    <state x="420" y="0" width="585" height="728" key="find.popup" timestamp="1603291970541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="0" width="585" height="728" key="find.popup/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602926386146" />
+    <state x="0" y="0" width="585" height="728" key="find.popup/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603204914873" />
+    <state x="420" y="0" width="585" height="728" key="find.popup/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603291970541" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1602781541226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602781541226" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603118679778">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603301547683">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603118679778" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603301547683" />
   </component>
 </project>

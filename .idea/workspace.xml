@@ -20,25 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e5f747b-644c-462d-a648-70ceb723a8a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/liip_imagine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021101548.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201021103049.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/properties/5f906e3a2caf1563113953.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/properties/empty.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ContactType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Notification/ContactNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/emails/contact.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaSuperAgence.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Property.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Property.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PropertyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PropertyType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/property/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/property/_property.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/_property.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/property/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/property/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +165,8 @@
       <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
       <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1isxhZVZuU2hCtRe7QGAsAGEtig" />
@@ -183,7 +183,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.lang.actions.generation.PhpGenerateFieldAccessorHandlerBase$MyMemberChooser.fluent.setters.last.selected" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin/option" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Form" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -196,6 +196,7 @@
       <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\src\Controller\Admin" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\src\Form" />
       <recent name="C:\xampp\htdocs\php\TP_Symfony\MaSuperAgence\templates\admin\option" />
     </key>
   </component>
@@ -215,7 +216,7 @@
       <workItem from="1602842130361" duration="2432000" />
       <workItem from="1602922152229" duration="56781000" />
       <workItem from="1603131787936" duration="117000" />
-      <workItem from="1603131935685" duration="45472000" />
+      <workItem from="1603131935685" duration="55661000" />
     </task>
     <servers />
   </component>
@@ -257,11 +258,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="450" y="166" key="#com.intellij.fileTypes.FileTypeChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603128729771" />
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603275263820">
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1603356502954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603207730976" />
-    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603275263820" />
+    <state x="488" y="46" key="#com.intellij.ide.util.MemberChooser/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603356502954" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1602921973893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -290,10 +291,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="263" y="99" key="IDE.errors.dialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603110553632" />
-    <state x="417" y="87" key="NewPhpClassDialog" timestamp="1603110314795">
+    <state x="417" y="87" key="NewPhpClassDialog" timestamp="1603351678484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="417" y="87" key="NewPhpClassDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603110314795" />
+    <state x="417" y="87" key="NewPhpClassDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603351678484" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1603364359183">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603364359183" />
     <state x="232" y="18" key="SettingsEditor" timestamp="1603110837475">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,11 +307,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1602778863916" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603202626342">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1603314720252">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1603202626342" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603121135066" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/-1360.0.1360.728/1366.0.1440.860/0.0.1366.728@0.0.1366.728" timestamp="1603314720252" />
     <state x="420" y="0" width="585" height="728" key="find.popup" timestamp="1603291970541">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
